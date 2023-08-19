@@ -9,55 +9,55 @@
   </head>
   <body>
     <div id="app"></div>
-    <nav id="navbar">
-      <div id="links-container">
-        <img src="/logo.webp" alt="" />
-
-        <ul id="navigation-links">
-          <li><a href="#">Trending</a></li>
-          <li><a href="#">Pre-orders</a></li>
-          <li><a href="#">Upcoming</a></li>
-          <li><a href="#">Support 24/7</a></li>
-        </ul>
-
-        <div id="cart-and-user-container">
-          <img
-            src="/conversation-svgrepo-com.svg"
-            alt=""
-            style="width: 35px; height: 35px; color: white"
-          />
-          <img
-            src="/user-svgrepo-com.svg"
-            alt=""
-            style="width: 35px; height: 35px"
-          />
-        </div>
-      </div>
-    </nav>
-    <section id="hero-section">
-      <div class="skewed-container"></div>
-      <div id="hero-info">
-        <div class="container">
-          <p class="days-badge">In 15 days</p>
-          <h1>
-            Starfield Digital Premium <br />
-            Edition + Early Access <br />
-          </h1>
-          <div>
-            <div class="parallelogram-container">
-              <div class="parallelogram"></div>
-              <p>-25%</p>
-            </div>
-            73.89 €
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section class="container" id="trending-products">
       <div id="trending-products-header">
         <h2>Trending</h2>
-        <button>View all</button>
+        <button class="view-all-button">View all</button>
+      </div>
+
+      <div class="products">
+        <div class="products-card">
+          <div class="card-img-top">
+            <img src="/maxresdefault.jpg" alt="Product Image" />
+            <div class="discount-badge">
+              <div class="discount-shape"></div>
+              <p>-25%</p>
+            </div>
+          </div>
+          <div class="card-details">
+            <p>Product Description</p>
+            <p class="product-price">73.89 €</p>
+          </div>
+        </div>
+
+        <div class="products-card">
+          <div class="card-img-top">
+            <img src="/maxresdefault.jpg" alt="Product Image" />
+            <div class="discount-badge">
+              <div class="discount-shape"></div>
+              <p>-25%</p>
+            </div>
+          </div>
+          <div class="card-details">
+            <p>Product Description</p>
+            <p class="product-price">73.89 €</p>
+          </div>
+        </div>
+
+        <div class="products-card">
+          <div class="card-img-top">
+            <img src="/maxresdefault.jpg" alt="Product Image" />
+            <div class="discount-badge">
+              <div class="discount-shape"></div>
+              <p>-25%</p>
+            </div>
+          </div>
+          <div class="card-details">
+            <p>Product Description</p>
+            <p class="product-price">73.89 €</p>
+          </div>
+        </div>
       </div>
     </section>
     <script type="module" src="/main.js"></script>
