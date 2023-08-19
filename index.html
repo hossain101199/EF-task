@@ -8,58 +8,50 @@
     <link rel="stylesheet" href="./src/styles/main.scss" />
   </head>
   <body>
+    <nav id="navbar">
+      <div id="links-container">
+        <img id="logo" src="/logo.webp" alt="Logo" />
+
+        <div id="nav-content">
+          <ul id="navigation-links">
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Pre-orders</a></li>
+            <li><a href="#">Upcoming</a></li>
+            <li><a href="#">Support 24/7</a></li>
+          </ul>
+          <div id="search-and-secondary-nav">
+            <div id="secondary-navbar">
+              <button class="secondary-nav-button">
+                <img src="/computer.svg" alt="" />Pc
+                <img src="/arrow.svg" alt="" />
+              </button>
+              <button class="secondary-nav-button">
+                <img src="/playstation.svg" alt="" />Playstation
+                <img src="/arrow.svg" alt="" />
+              </button>
+              <button class="secondary-nav-button">
+                <img src="/xbox.svg" alt="" />Xbox
+                <img src="/arrow.svg" alt="" />
+              </button>
+              <button class="secondary-nav-button">
+                <img src="/nintendo-switch.svg" alt="" />Nintendo
+                <img src="/arrow.svg" alt="" />
+              </button>
+              <button class="search-button">
+                <img src="/search.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div id="cart-and-user-container">
+          <img class="icon" src="/cart.svg" alt="cart" />
+          <img class="icon" src="/user-svgrepo-com.svg" alt="User" />
+        </div>
+      </div>
+    </nav>
     <div id="app"></div>
 
-    <section class="container" id="trending-products">
-      <div id="trending-products-header">
-        <h2>Trending</h2>
-        <button class="view-all-button">View all</button>
-      </div>
-
-      <div class="products">
-        <div class="products-card">
-          <div class="card-img-top">
-            <img src="/maxresdefault.jpg" alt="Product Image" />
-            <div class="discount-badge">
-              <div class="discount-shape"></div>
-              <p>-25%</p>
-            </div>
-          </div>
-          <div class="card-details">
-            <p>Product Description</p>
-            <p class="product-price">73.89 €</p>
-          </div>
-        </div>
-
-        <div class="products-card">
-          <div class="card-img-top">
-            <img src="/maxresdefault.jpg" alt="Product Image" />
-            <div class="discount-badge">
-              <div class="discount-shape"></div>
-              <p>-25%</p>
-            </div>
-          </div>
-          <div class="card-details">
-            <p>Product Description</p>
-            <p class="product-price">73.89 €</p>
-          </div>
-        </div>
-
-        <div class="products-card">
-          <div class="card-img-top">
-            <img src="/maxresdefault.jpg" alt="Product Image" />
-            <div class="discount-badge">
-              <div class="discount-shape"></div>
-              <p>-25%</p>
-            </div>
-          </div>
-          <div class="card-details">
-            <p>Product Description</p>
-            <p class="product-price">73.89 €</p>
-          </div>
-        </div>
-      </div>
-    </section>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
