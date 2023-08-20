@@ -1,9 +1,29 @@
-import { onAdvanceSearch } from "./src/scripts/search";
+import { hideSearch } from "./src/scripts/search";
 import "./src/styles/main.scss";
 
 document.querySelector("#app").innerHTML = `
-    <div>
-      
+<div>
+      <nav id="navbar">
+        <div id="links-container">
+          <img id="logo" src="/logo.webp" alt="Logo" />
+
+          <div id="nav-content">
+            <ul id="navigation-links">
+              <li><a href="#">Trending</a></li>
+              <li><a href="#">Pre-orders</a></li>
+              <li><a href="#">Upcoming</a></li>
+              <li><a href="#">Support 24/7</a></li>
+            </ul>
+
+            <div id="search-and-secondary-nav"></div>
+          </div>
+
+          <div id="cart-and-user-container">
+            <img class="icon" src="/cart.svg" alt="cart" />
+            <img class="icon" src="/user-svgrepo-com.svg" alt="User" />
+          </div>
+        </div>
+      </nav>
       <section id="hero-section">
         <div class="background-container"></div>
         <div id="hero-info">
@@ -29,7 +49,6 @@ document.querySelector("#app").innerHTML = `
           <h2>Trending</h2>
           <button class="view-all-button">View all</button>
         </div>
-
         <div class="products">
           <div class="products-card">
             <div class="card-img-top">
@@ -77,4 +96,4 @@ document.querySelector("#app").innerHTML = `
     </div>
 `;
 
-onAdvanceSearch(document.querySelector(".search-button"));
+hideSearch();
